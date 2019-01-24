@@ -46,7 +46,7 @@ def get_img(page, headers):
     x = 0
     for imgurl in imglist2:
         bin = requests.get(imgurl, headers=headers).content
-        with open('E:/Pic2/%s.jpg' % x, 'wb') as file:
+        with open('/Users/yunchispk/Documents/Tmp/爬虫图片/%s.jpg' % x, 'wb') as file:
             file.write(bin)
             x += 1
 
